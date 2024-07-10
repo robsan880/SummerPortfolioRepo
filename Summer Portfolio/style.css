@@ -129,3 +129,6 @@ transition: 0.5s;
 .tab-contents{
     display:none;
 }
+.tab-contents.active-tab{
+    display: block;
+}

@@ -41,13 +41,13 @@
                     <p>I am born in the bay area, and one of my hobbies are playing basketball with my friends and family<p>
 
                       <div class="tab-titles">
-                        <p class="tab-links active skills">Skills</p>
-                        <p class="tab-links">Experiance</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                      </div>
 
                      <!---Skills-->
-                      <div class="tab-contents">
+                      <div class="tab-contents active-tab" id="Skills">
                         <ul>
                           <li><span>Athlete</span><br>place holder (your job)</li>
                           <li><span>Place Holder(My Experiances)</span><br>School</li>
@@ -56,18 +56,18 @@
                       </div>
 
                       <!---Experaince-->
-                      <div class="tab-contents">
+                      <div class="tab-contents" id="Experiances">
                         <ul>
-                          <li><span>Athlete</span><br>place holder (your job)</li>
-                          <li><span>Place Holder(My Experiances)</span><br>School</li>
-                          <li><span>In High School</span><br>weight lifting is my hobby</li>
+                          <li><span>Experiance 1</span><br>place holder (your job)</li>
+                          <li><span> Experiances 2</span><br>School</li>
+                          <li><span>Experiances 3</span><br>weight lifting is my hobby</li>
                         </ul>
                       </div>
 
                       <!---Education-->
-                      <div class="tab-contents">
+                      <div class="tab-contents" id="Education">
                         <ul>
-                          <li><span>Athlete</span><br>place holder (your job)</li>
+                          <li><span>Athlete</span><br>Hercules High School Student</li>
                           <li><span>Place Holder(My Experiances)</span><br>School</li>
                           <li><span>In High School</span><br>weight lifting is my hobby</li>
                         </ul>
@@ -78,6 +78,27 @@
               </div>
          </div>
          <!--About Section End-->
+          <script>
+          /*Create a variable called tablinks that holds the tags 'tab-links'*/
+           var tabLinks = document.getElementsByClassName("tab-links");
+           /*Create a variable called tablinks that holds the tags 'tab-contents'*/
+           var tabContents = document.getElementsByClassName("tab-contents");
+           function OpenTab(tabname)
+           {
+             for(tabLink of tablLinks)
+             {
+              /*remove the class 'active-link' from that tag*/
+              tabLink.classList.remove("active-link")
+             }
+             /*Take the selected tag title, and add the 'active-link' class to it to make its contents appear on the page*/
+             event.CurrentTarget.classList.add("active-link")
+           }
+            document.getElementById(tabName).classList.add("active-tab")
+
+
+        
+          
+           </script>
     </body>
         
     </html>
