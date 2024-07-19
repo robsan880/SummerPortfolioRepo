@@ -199,8 +199,8 @@ transition: 0.5s;
 }
 
 .layer{
-    width:100%;
-    height: 0%;
+    width:0;
+    height: 100%;
     background: linear-gradient(rgba(0,0,0,0.6),#8e3207);
     border-radius: 10px;
     position:absolute;
@@ -214,7 +214,7 @@ transition: 0.5s;
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
-    transition: height 0.5s;
+    transition: width 0.5s;
     
 
 
@@ -240,7 +240,7 @@ transform:scale(1.1);
 }
 
 .work:hover .layer{
-    height: 100%;
+    width: 100%;
 }
 .btn{
     display: block;
@@ -251,6 +251,39 @@ transform:scale(1.1);
     border-radius: 6px;
 }
 .btn:hover{
-    background: #8e3207;
+    background: #e9c992;
     
+}
+/*------contact--------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact-left p i {
+    color:#8e3207;
+    margin-right:15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top:30px
+
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #8e3207;
+    display: inline-block;
+    transition: transform 0.5;
+}
+.social-icons a:hover{
+    color:#e65885;
+    transform: translateY(-5px);
 }
