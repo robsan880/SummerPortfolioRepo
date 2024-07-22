@@ -1,10 +1,24 @@
 /*---Header---*/
 *{
-
+scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
     font-family:'Poppins', sans-serif;
     box-sizing: border-box;
+    nav ul{
+        background: #8e3207;
+        position:fixed;
+        top:0;
+        right:0;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    
 }
 body{
     background:rgb(120, 8, 8) ;
@@ -286,4 +300,87 @@ transform:scale(1.1);
 .social-icons a:hover{
     color:#e65885;
     transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #d3703f;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input,form textarea{
+    width:100%;
+    border: 0%;
+    outline: none;
+    background:rgba(186, 9, 9, 0.359);
+    padding: 15px;
+    margin:15px 0;
+    color:#e8e8e8;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width:100%;
+    text-align:center;
+    padding: 25px 0;
+    background: #8e3207;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color:red;
+}
+/*--------css for small screen-------*/
+nav .fas{
+    display:none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/selfie\ copy.png);
+    }
+    .header-text{
+        margin-top:100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size:30px;
+    
+    }
+    nav .fas{
+        display: block;
+        font-size:25px ;
+    }
+    nav ul{
+        background: #8e3207;
+        position:fixed;
+        top:0;
+        right:0;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+}
+.custom-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+}
+#msg{
+    color: #8e3207;
+    margin-top: -40px;
+    display: block;
 }
