@@ -10,7 +10,7 @@ scroll-behavior: smooth;
         position:fixed;
         top:0;
         right:0;
-        width:200px;
+        width:100px;
         height:100vh;
         padding-top:50px;
     }
@@ -21,7 +21,7 @@ scroll-behavior: smooth;
     
 }
 body{
-    background:rgb(120, 8, 8) ;
+    background:rgb(137, 20, 20) ;
     color: #fff;
 }
 #header{
@@ -281,7 +281,7 @@ transform:scale(1.1);
     font-family: 'Courier New', Courier, monospace;
 }
 .contact-left p i {
-    color:#8e3207;
+    color:#c49c0d;
     margin-right:15px;
     font-size: 25px;
 }
@@ -293,7 +293,7 @@ transform:scale(1.1);
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #8e3207;
+    color: #cfc508;
     display: inline-block;
     transition: transform 0.5;
 }
