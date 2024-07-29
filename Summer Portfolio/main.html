@@ -33,47 +33,70 @@
             </div>
         </div>
         <!------About Section----->
-        <div id="about">
-            <div class="container">
-                <div class="row">  
-                    <div class="about-col-1">
-                        <img src="images/selfie.2.png" alt="Headshot of me"> 
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About me</h1>
-                        <p>I am born in the bay area, and one of my hobbies are playing basketball with my friends and family</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="OpenTab('Skills')">Skills</p>
-                            <p class="tab-links" onclick="OpenTab('exp')">Experiance</p>
-                            <p class="tab-links" onclick="OpenTab('edu')">Education</p>
-                        </div>
-                        <!---Skills-->
-                        <div class="tab-contents active-tab" id="Skills">
-                            <ul>
-                                <li><span>Athlete</span><br>former track athelete</li>
-                                <li><span>Youtuber</span><br>Self taught youtube content creator and editor</li>
-                                <li><span>Weight lifting</span><br>My bench press is 190lbs</li>
-                            </ul>
-                        </div>
-                        <!---Experaince-->
-                        <div class="tab-contents" id="exp">
-                            <ul>
-                                <li><span>AP tests</span><br>I have experiance in taking tests like the Ap test in U.S history and Chemistry</li>
-                                <li><span>SAT</span><br>I have experiance in taking the SAT and scoring 1100</li>
-                                <li><span>Weight lifting</span><br>I have a years worth of weight lifting experiance</li>
-                            </ul>
-                        </div>
-                        <!---Education-->
-                        <div class="tab-contents" id="edu">
-                            <ul>
-                                <li><span>EDU</span><br>Hercules High School Student</li>
-                                <li><span>EDU</span><br>2 time concutent enrollment students</li>
-                                <li><span>EDU</span><br>I have experiance in taking standerdized tests like AP tests and the SAT</li>
-                            </ul>
-                        </div>
-                    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">  
+            <div class="about-col-1">
+                <img src="images/selfie.2.png" alt="Headshot of me"> 
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I was born in the Bay Area, and one of my hobbies is playing basketball with my friends and family.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="OpenTab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="OpenTab('exp')">Experience</p>
+                    <p class="tab-links" onclick="OpenTab('edu')">Education</p>
+                </div>
+
+                <!-- Skills -->
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Athlete</span><br>Former track athlete</li>
+                        <li><span>YouTuber</span><br>Self-taught YouTube content creator and editor</li>
+                        <li><span>Weightlifting</span><br>My bench press is 190 lbs</li>
+                    </ul>
+                </div>
+                <!-- Experience -->
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>AP Tests</span><br>I have experience in taking tests like the AP test in U.S. History and Chemistry</li>
+                        <li><span>SAT</span><br>I have experience in taking the SAT and scored 1100</li>
+                        <li><span>Weightlifting</span><br>I have a year of weightlifting experience</li>
+                    </ul>
+                </div>
+                <!-- Education -->
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <li><span>High School</span><br>Hercules High School Student</li>
+                        <li><span>Concurrent Enrollment</span><br>Two-time concurrent enrollment student</li>
+                        <li><span>Standardized Tests</span><br>I have experience in taking standardized tests like AP tests and the SAT</li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function OpenTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab-contents");
+    var tabs = document.getElementsByClassName("tab-links");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.remove("active-tab");
+    }
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active-link");
+    }
+    document.getElementById(tabName).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
+</script>
+
+  </div>
+     </div>
+    </div>
         </div>
         <!--About Section End-->
         <!--Services section-->
@@ -173,7 +196,7 @@
         <div id="clicker-game">
             <div class="container">
                 <h1 class="sub-title">Clicking Mini-Game</h1>
-                <p>How many times can you click the button in 10 seconds?</p>
+                <p>How many times can you click the button in 10 seconds? <i class="fa-solid fa-burst"></i> <i class="fa-solid fa-arrow-pointer"></i></p>
                 <button id="start-game-button" class="custom-button">Start Game</button>
                 <button id="clicker-button" class="custom-button" style="display:none;">Click Me!</button>
                 <p id="click-count">Clicks: 0</p>
